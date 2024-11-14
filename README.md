@@ -87,7 +87,12 @@ pip install Flask folium geopy
 
 Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-## Ejemplo
+## Ejemplos
+![imagen](https://github.com/user-attachments/assets/0ba3959d-c4dc-4192-b710-51b0a97f81f0)
+
+![imagen](https://github.com/user-attachments/assets/7647552b-6e00-41a4-a5a1-9d0ec388b8cc)
 
 
-![Captura de pantalla del mapa generado](images/mi_imagen.png)
+
+
+
