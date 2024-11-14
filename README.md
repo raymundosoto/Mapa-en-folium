@@ -75,6 +75,49 @@ pip install Flask folium geopy
 7. **Descarga el mapa generado**:
    - Haz clic en el botón **"Descargar Mapa"** para guardar el mapa como un archivo HTML en tu dispositivo.
 
+
+## Instalación en un entorno virtual de Python
+
+Sigue estos pasos para instalar y ejecutar el proyecto en un entorno virtual:
+
+1. **Clonar el repositorio**:
+   - Ejecuta el siguiente comando para clonar el repositorio:
+     ```bash
+     git clone https://github.com/tu_usuario/tu_repositorio.git
+     ```
+
+2. **Acceder a la carpeta del proyecto**:
+   - Navega al directorio del proyecto con:
+     ```bash
+     cd nombre_del_proyecto
+     ```
+
+3. **Crear un entorno virtual (opcional)**:
+   - Para **Windows**, crea y activa un entorno virtual:
+     ```bash
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+   - Para **Mac/Linux**, crea y activa un entorno virtual:
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+
+4. **Instalar las dependencias**:
+   - Instala todas las dependencias necesarias desde el archivo `requirements.txt`:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+5. **Ejecutar el proyecto**:
+   - Una vez instaladas las dependencias, ejecuta el proyecto con:
+     ```bash
+     python app.py
+     ```
+   - El servidor se iniciará y podrás acceder a la aplicación en tu navegador en [http://127.0.0.1:5000](http://127.0.0.1:5000).
+
+
 ## Créditos
 
 - **Desarrollado por**: Raymundo Soto Soto
