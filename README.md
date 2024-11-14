@@ -74,3 +74,20 @@ pip install Flask folium geopy
 
 7. **Descarga el mapa generado**:
    - Haz clic en el botón **"Descargar Mapa"** para guardar el mapa como un archivo HTML en tu dispositivo.
+
+## Créditos
+
+- **Desarrollado por**: Raymundo Soto Soto
+- **Librerías utilizadas**:
+  - [Flask](https://flask.palletsprojects.com/) - Framework para el desarrollo de aplicaciones web.
+  - [Folium](https://python-visualization.github.io/folium/) - Librería para la creación de mapas interactivos.
+  - [Geopy](https://geopy.readthedocs.io/en/stable/) - Librería para realizar geocodificación y cálculos de distancias geográficas.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+## Ejemplo
+
+
+![Captura de pantalla del mapa generado](images/mi_imagen.png)
