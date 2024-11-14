@@ -32,6 +32,7 @@ Puedes instalar las dependencias utilizando `pip`:
 
 ```bash
 pip install Flask folium geopy
+
 ```
 
 
