@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Rutas Cerradas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Rutas Aleatorias en Mapas</h1>
+        <form action="/generate_route" method="POST">
+            <button type="submit">Generar Ruta</button>
+        </form>
+
+        <div class="content">
+            <!-- Mapa a la izquierda -->
+            <div class="map-container">
+                <h2>Mapa</h2>
+                {% if map_filename %}
+                    <iframe src="{{ url_for('static', filename='maps/' + map_filename) }}" width="600" height="400"></iframe>
+                    <a href="{{ url_for('static', filename='maps/' + map_filename) }}" download="my_map.html">
+                        <button>Descargar Mapa</button>
+                    </a>
+                {% else %}
+                    <p>Genera una ruta para ver el mapa aquí.</p>
+                {% endif %}
+            </div>
+
+            <!-- Lista de lugares a la derecha -->
+            <div class="locations">
+                <h2>Ubicaciones</h2>
+                {% if locations %}
+                    <ul>
+                        {% for location in locations %}
+                        <li>Ubicación {{ location.id }}: {{ location.latitude | round(4) }}, {{ location.longitude | round(4) }} - {{ location.name }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No hay ubicaciones generadas. Presiona el botón para generar una ruta.</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Distancia total debajo del mapa -->
+        {% if total_distance is not none %}
+        <div class="distance">
+            <h3>Distancia total de la ruta cerrada: {{ total_distance | round(2) }} km</h3>
+        </div>
+        {% endif %}
+        <footer style="text-align: center; margin-top: 40px; font-size: 14px; color: #aaa;">
+            <p>Desarrollado por: Raymundo Soto Soto</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

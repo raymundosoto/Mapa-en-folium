@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd535f9a619ffc8af9b5b982a68f8a14 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fd535f9a619ffc8af9b5b982a68f8a14" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd535f9a619ffc8af9b5b982a68f8a14 = L.map(
+                "map_fd535f9a619ffc8af9b5b982a68f8a14",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb833df66f9139ebd83a33afc3df40fc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_eb833df66f9139ebd83a33afc3df40fc.addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+            var marker_abe63696162da1aa97e4fc7b124835f8 = L.marker(
+                [33.421502949225584, -79.79093673592745],
+                {}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+        var popup_2b28fce87d7fe4da2b8e823d4fd12f60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ebab89c5f34af8612f322bec0f7a200 = $(`<div id="html_7ebab89c5f34af8612f322bec0f7a200" style="width: 100.0%; height: 100.0%;">Ubicación 1: (33.4215, -79.7909) - Santee Road, The 90, Williamsburg County, Carolina del Sur, 29564, Estados Unidos de América</div>`)[0];
+                popup_2b28fce87d7fe4da2b8e823d4fd12f60.setContent(html_7ebab89c5f34af8612f322bec0f7a200);
+            
+        
+
+        marker_abe63696162da1aa97e4fc7b124835f8.bindPopup(popup_2b28fce87d7fe4da2b8e823d4fd12f60)
+        ;
+
+        
+    
+    
+            var marker_526de94708114840a614e1dc835ab2ea = L.marker(
+                [9.302462007536079, -38.90991572734063],
+                {}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+        var popup_43db65b38ea55a7c5083a145d6aed578 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc88b47bbdd79c82e8f4fe24e424f45d = $(`<div id="html_cc88b47bbdd79c82e8f4fe24e424f45d" style="width: 100.0%; height: 100.0%;">Ubicación 2: (9.3025, -38.9099) - Desconocido</div>`)[0];
+                popup_43db65b38ea55a7c5083a145d6aed578.setContent(html_cc88b47bbdd79c82e8f4fe24e424f45d);
+            
+        
+
+        marker_526de94708114840a614e1dc835ab2ea.bindPopup(popup_43db65b38ea55a7c5083a145d6aed578)
+        ;
+
+        
+    
+    
+            var poly_line_b67507b014a3361d5432f131d10f496d = L.polyline(
+                [[33.421502949225584, -79.79093673592745], [9.302462007536079, -38.90991572734063]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+            var marker_d947e8d1d0869c1f9cae5b4e103e248c = L.marker(
+                [69.29141413589383, -54.13896292425488],
+                {}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+        var popup_f7f567b618fcac8b7ce3a58dbd9dae47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f86a14d0314bb82884d1a0a188577e0 = $(`<div id="html_4f86a14d0314bb82884d1a0a188577e0" style="width: 100.0%; height: 100.0%;">Ubicación 3: (69.2914, -54.1390) - Qeqertalik, Groenlandia</div>`)[0];
+                popup_f7f567b618fcac8b7ce3a58dbd9dae47.setContent(html_4f86a14d0314bb82884d1a0a188577e0);
+            
+        
+
+        marker_d947e8d1d0869c1f9cae5b4e103e248c.bindPopup(popup_f7f567b618fcac8b7ce3a58dbd9dae47)
+        ;
+
+        
+    
+    
+            var poly_line_7a0128a927649268416d6470ce120992 = L.polyline(
+                [[9.302462007536079, -38.90991572734063], [69.29141413589383, -54.13896292425488]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+            var marker_5dee657d642c889500cd540db48a1c98 = L.marker(
+                [83.38605134814716, 94.49579383680543],
+                {}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+        var popup_f372b7541a69c1aac1b59bbd60af60d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5290dc86e195235ae748195bc99ffc8d = $(`<div id="html_5290dc86e195235ae748195bc99ffc8d" style="width: 100.0%; height: 100.0%;">Ubicación 4: (83.3861, 94.4958) - Desconocido</div>`)[0];
+                popup_f372b7541a69c1aac1b59bbd60af60d8.setContent(html_5290dc86e195235ae748195bc99ffc8d);
+            
+        
+
+        marker_5dee657d642c889500cd540db48a1c98.bindPopup(popup_f372b7541a69c1aac1b59bbd60af60d8)
+        ;
+
+        
+    
+    
+            var poly_line_b0c8c5c4104e98640f9fcb736ec1cc35 = L.polyline(
+                [[69.29141413589383, -54.13896292425488], [83.38605134814716, 94.49579383680543]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+            var marker_ebde6cdf60cdb6c75ce1c51b0e2c1cd0 = L.marker(
+                [-56.731406384243726, 159.49254390855975],
+                {}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+        var popup_5bfee4e6b1b6ba6ba7d89e837abdf92c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ae0f7a1bf404c8f8c1bc4c8c8e7b50d = $(`<div id="html_7ae0f7a1bf404c8f8c1bc4c8c8e7b50d" style="width: 100.0%; height: 100.0%;">Ubicación 5: (-56.7314, 159.4925) - Desconocido</div>`)[0];
+                popup_5bfee4e6b1b6ba6ba7d89e837abdf92c.setContent(html_7ae0f7a1bf404c8f8c1bc4c8c8e7b50d);
+            
+        
+
+        marker_ebde6cdf60cdb6c75ce1c51b0e2c1cd0.bindPopup(popup_5bfee4e6b1b6ba6ba7d89e837abdf92c)
+        ;
+
+        
+    
+    
+            var poly_line_8a154b9afef40128002591c025b836c4 = L.polyline(
+                [[83.38605134814716, 94.49579383680543], [-56.731406384243726, 159.49254390855975]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+            var marker_cb23b0bbe4d682ea4cd705f0278efb53 = L.marker(
+                [-72.37440598321396, -55.25081851586789],
+                {}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+        var popup_6af1227f029e22b833c2c3114c2c6412 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77bfc438328577ac256eea3f20ab3ae0 = $(`<div id="html_77bfc438328577ac256eea3f20ab3ae0" style="width: 100.0%; height: 100.0%;">Ubicación 6: (-72.3744, -55.2508) - Desconocido</div>`)[0];
+                popup_6af1227f029e22b833c2c3114c2c6412.setContent(html_77bfc438328577ac256eea3f20ab3ae0);
+            
+        
+
+        marker_cb23b0bbe4d682ea4cd705f0278efb53.bindPopup(popup_6af1227f029e22b833c2c3114c2c6412)
+        ;
+
+        
+    
+    
+            var poly_line_381f23ec1fe4005829332cc20a05747b = L.polyline(
+                [[-56.731406384243726, 159.49254390855975], [-72.37440598321396, -55.25081851586789]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+            var marker_d2246ed98bfc4bc2299392a22e24b9fe = L.marker(
+                [-55.34492754722071, -138.44511623079615],
+                {}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+        var popup_3dc3d9ab3dd204c8f43b46f8173fc2a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed389ebc623e3fc89a83d79e2528a2dd = $(`<div id="html_ed389ebc623e3fc89a83d79e2528a2dd" style="width: 100.0%; height: 100.0%;">Ubicación 7: (-55.3449, -138.4451) - Desconocido</div>`)[0];
+                popup_3dc3d9ab3dd204c8f43b46f8173fc2a5.setContent(html_ed389ebc623e3fc89a83d79e2528a2dd);
+            
+        
+
+        marker_d2246ed98bfc4bc2299392a22e24b9fe.bindPopup(popup_3dc3d9ab3dd204c8f43b46f8173fc2a5)
+        ;
+
+        
+    
+    
+            var poly_line_acb76f9fe2d324dc2395bd979340e74f = L.polyline(
+                [[-72.37440598321396, -55.25081851586789], [-55.34492754722071, -138.44511623079615]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+            var marker_8829b383f791a0233df6c75550df8d15 = L.marker(
+                [-7.551721957405292, 145.11936977347347],
+                {}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+        var popup_29203ff873819d8e686ea02e718a12d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1f7aa08a2c2921b5aa702ca49925a87 = $(`<div id="html_e1f7aa08a2c2921b5aa702ca49925a87" style="width: 100.0%; height: 100.0%;">Ubicación 8: (-7.5517, 145.1194) - Kaivaria, Gulf, Southern Region, Papua-Nueva Guinea</div>`)[0];
+                popup_29203ff873819d8e686ea02e718a12d8.setContent(html_e1f7aa08a2c2921b5aa702ca49925a87);
+            
+        
+
+        marker_8829b383f791a0233df6c75550df8d15.bindPopup(popup_29203ff873819d8e686ea02e718a12d8)
+        ;
+
+        
+    
+    
+            var poly_line_c67dcc44d7e17c4deeafe3c5ff122425 = L.polyline(
+                [[-55.34492754722071, -138.44511623079615], [-7.551721957405292, 145.11936977347347]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+            var marker_5576ba8aab1ed6ba0243849cc72762b0 = L.marker(
+                [62.38921096855469, 45.90495167679401],
+                {}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+        var popup_0faa6c992e9519ce5f869f00ca2cba98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc264bbeba016074624394028ea6abac = $(`<div id="html_cc264bbeba016074624394028ea6abac" style="width: 100.0%; height: 100.0%;">Ubicación 9: (62.3892, 45.9050) - Верхнетоемский муниципальный округ, Óblast de Arcángel, Северо-Западный федеральный округ, Rusia</div>`)[0];
+                popup_0faa6c992e9519ce5f869f00ca2cba98.setContent(html_cc264bbeba016074624394028ea6abac);
+            
+        
+
+        marker_5576ba8aab1ed6ba0243849cc72762b0.bindPopup(popup_0faa6c992e9519ce5f869f00ca2cba98)
+        ;
+
+        
+    
+    
+            var poly_line_2ac14eab97c8bfbdafbfc87e9aa7d8fb = L.polyline(
+                [[-7.551721957405292, 145.11936977347347], [62.38921096855469, 45.90495167679401]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+            var marker_e4e10084b5585920ba09b3a56ef6dffb = L.marker(
+                [33.421502949225584, -79.79093673592745],
+                {}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+        var popup_c97023904f490492049affef0292a255 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5533ce14772089ca56d7c393cb712961 = $(`<div id="html_5533ce14772089ca56d7c393cb712961" style="width: 100.0%; height: 100.0%;">Ubicación 10: (33.4215, -79.7909) - Santee Road, The 90, Williamsburg County, Carolina del Sur, 29564, Estados Unidos de América</div>`)[0];
+                popup_c97023904f490492049affef0292a255.setContent(html_5533ce14772089ca56d7c393cb712961);
+            
+        
+
+        marker_e4e10084b5585920ba09b3a56ef6dffb.bindPopup(popup_c97023904f490492049affef0292a255)
+        ;
+
+        
+    
+    
+            var poly_line_cbc007c1d51250a0fe0fffcc9061a186 = L.polyline(
+                [[62.38921096855469, 45.90495167679401], [33.421502949225584, -79.79093673592745]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fd535f9a619ffc8af9b5b982a68f8a14);
+        
+    
+            map_fd535f9a619ffc8af9b5b982a68f8a14.fitBounds(
+                [[33.421502949225584, -79.79093673592745], [9.302462007536079, -38.90991572734063], [69.29141413589383, -54.13896292425488], [83.38605134814716, 94.49579383680543], [-56.731406384243726, 159.49254390855975], [-72.37440598321396, -55.25081851586789], [-55.34492754722071, -138.44511623079615], [-7.551721957405292, 145.11936977347347], [62.38921096855469, 45.90495167679401], [33.421502949225584, -79.79093673592745]],
+                {}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d3629981de8c2dc131a9f6b06c86af53 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d3629981de8c2dc131a9f6b06c86af53" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d3629981de8c2dc131a9f6b06c86af53 = L.map(
+                "map_d3629981de8c2dc131a9f6b06c86af53",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_57a163e097909eed2dd32b9afa2220b6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_57a163e097909eed2dd32b9afa2220b6.addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+            var marker_a053339622a777635509d8878bce0945 = L.marker(
+                [-1.8377677249794289, 133.97280107924377],
+                {}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+        var popup_b49f90154723c34d9ce9ae164ca6f192 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a500f155d454b439e0f0e387c0a2001 = $(`<div id="html_6a500f155d454b439e0f0e387c0a2001" style="width: 100.0%; height: 100.0%;">Ubicación 1: (-1.8378, 133.9728) - Manokwari Selatan, Papua Barat, Nueva Guinea Occidental, Indonesia</div>`)[0];
+                popup_b49f90154723c34d9ce9ae164ca6f192.setContent(html_6a500f155d454b439e0f0e387c0a2001);
+            
+        
+
+        marker_a053339622a777635509d8878bce0945.bindPopup(popup_b49f90154723c34d9ce9ae164ca6f192)
+        ;
+
+        
+    
+    
+            var marker_12fa0e29a92fa574e676a978508410db = L.marker(
+                [36.05515744286991, 109.72175423421595],
+                {}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+        var popup_739b47c08fc31a8e1f4495233880f044 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_330fbb8b4a6da0eef900e57c66cae8a8 = $(`<div id="html_330fbb8b4a6da0eef900e57c66cae8a8" style="width: 100.0%; height: 100.0%;">Ubicación 2: (36.0552, 109.7218) - 宜川县, 延安市, Shaanxi, 716200, China</div>`)[0];
+                popup_739b47c08fc31a8e1f4495233880f044.setContent(html_330fbb8b4a6da0eef900e57c66cae8a8);
+            
+        
+
+        marker_12fa0e29a92fa574e676a978508410db.bindPopup(popup_739b47c08fc31a8e1f4495233880f044)
+        ;
+
+        
+    
+    
+            var poly_line_6c22b0ab4fec6d87c0993c3003c42a9e = L.polyline(
+                [[-1.8377677249794289, 133.97280107924377], [36.05515744286991, 109.72175423421595]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+            var marker_49791d632ad0cebadcd5f08397ac8e8d = L.marker(
+                [32.28564333080678, 30.648329389400345],
+                {}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+        var popup_76d5b6f5af6b3ca1f5aa0791c19f2e49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db0442161a4a11d7325a397fc0718495 = $(`<div id="html_db0442161a4a11d7325a397fc0718495" style="width: 100.0%; height: 100.0%;">Ubicación 3: (32.2856, 30.6483) - Desconocido</div>`)[0];
+                popup_76d5b6f5af6b3ca1f5aa0791c19f2e49.setContent(html_db0442161a4a11d7325a397fc0718495);
+            
+        
+
+        marker_49791d632ad0cebadcd5f08397ac8e8d.bindPopup(popup_76d5b6f5af6b3ca1f5aa0791c19f2e49)
+        ;
+
+        
+    
+    
+            var poly_line_469d3ff756bdfc80b979b7f6708322bd = L.polyline(
+                [[36.05515744286991, 109.72175423421595], [32.28564333080678, 30.648329389400345]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+            var marker_c33b25dc1c7c7081d6a5c2cdc2163c8c = L.marker(
+                [30.958133578876527, -60.41880410862038],
+                {}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+        var popup_afdc223f7cd048ed3b15880688c3babd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ece50069b1b13fba626fdbbed46d140 = $(`<div id="html_1ece50069b1b13fba626fdbbed46d140" style="width: 100.0%; height: 100.0%;">Ubicación 4: (30.9581, -60.4188) - Desconocido</div>`)[0];
+                popup_afdc223f7cd048ed3b15880688c3babd.setContent(html_1ece50069b1b13fba626fdbbed46d140);
+            
+        
+
+        marker_c33b25dc1c7c7081d6a5c2cdc2163c8c.bindPopup(popup_afdc223f7cd048ed3b15880688c3babd)
+        ;
+
+        
+    
+    
+            var poly_line_55a8446ec1395c1c576b8c99f59d0e83 = L.polyline(
+                [[32.28564333080678, 30.648329389400345], [30.958133578876527, -60.41880410862038]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+            var marker_4160458c15f19e535b932690385d42a7 = L.marker(
+                [49.106671670763205, 137.92452600277278],
+                {}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+        var popup_2e3a5042022cbd96ccf530697a3dffb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fda94be62abae1c6f56a3bec7522484 = $(`<div id="html_8fda94be62abae1c6f56a3bec7522484" style="width: 100.0%; height: 100.0%;">Ubicación 5: (49.1067, 137.9245) - Нанайский район, Krai de Jabárovsk, Distrito federal del Lejano Oriente, Rusia</div>`)[0];
+                popup_2e3a5042022cbd96ccf530697a3dffb1.setContent(html_8fda94be62abae1c6f56a3bec7522484);
+            
+        
+
+        marker_4160458c15f19e535b932690385d42a7.bindPopup(popup_2e3a5042022cbd96ccf530697a3dffb1)
+        ;
+
+        
+    
+    
+            var poly_line_7f11e04493025ab233ac1bd81e5af00a = L.polyline(
+                [[30.958133578876527, -60.41880410862038], [49.106671670763205, 137.92452600277278]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+            var marker_3f2261db5d6671009167a9832d2cb64b = L.marker(
+                [-38.541197458023184, -151.66733045527067],
+                {}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+        var popup_0e549a80197dca4deb250bb0065e89fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b30b081d3c3b581bc65204b3deff22dd = $(`<div id="html_b30b081d3c3b581bc65204b3deff22dd" style="width: 100.0%; height: 100.0%;">Ubicación 6: (-38.5412, -151.6673) - Desconocido</div>`)[0];
+                popup_0e549a80197dca4deb250bb0065e89fd.setContent(html_b30b081d3c3b581bc65204b3deff22dd);
+            
+        
+
+        marker_3f2261db5d6671009167a9832d2cb64b.bindPopup(popup_0e549a80197dca4deb250bb0065e89fd)
+        ;
+
+        
+    
+    
+            var poly_line_263797d0528b1cd5227284248bace2bc = L.polyline(
+                [[49.106671670763205, 137.92452600277278], [-38.541197458023184, -151.66733045527067]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+            var marker_c20bfde4339d825f07203f56f0f2cc57 = L.marker(
+                [-10.436303488824876, 162.60139995407593],
+                {}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+        var popup_4686620d69e3c42bf2b2f5fee5b0b69d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef53bcec84f768b2eea03ff2653a18ed = $(`<div id="html_ef53bcec84f768b2eea03ff2653a18ed" style="width: 100.0%; height: 100.0%;">Ubicación 7: (-10.4363, 162.6014) - Desconocido</div>`)[0];
+                popup_4686620d69e3c42bf2b2f5fee5b0b69d.setContent(html_ef53bcec84f768b2eea03ff2653a18ed);
+            
+        
+
+        marker_c20bfde4339d825f07203f56f0f2cc57.bindPopup(popup_4686620d69e3c42bf2b2f5fee5b0b69d)
+        ;
+
+        
+    
+    
+            var poly_line_8f9d576a8f70838521b5a4d858bb0f4e = L.polyline(
+                [[-38.541197458023184, -151.66733045527067], [-10.436303488824876, 162.60139995407593]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+            var marker_c8ac159b1823010a63c4af6f045e0db9 = L.marker(
+                [36.64511733908191, 111.31373020586926],
+                {}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+        var popup_8b3df9a3646424a2d95b75595e9cf1f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a6525ff5ae546fff1c487ec553f7845 = $(`<div id="html_4a6525ff5ae546fff1c487ec553f7845" style="width: 100.0%; height: 100.0%;">Ubicación 8: (36.6451, 111.3137) - 黎永高速, 汾西县, 临汾市, Shanxi, China</div>`)[0];
+                popup_8b3df9a3646424a2d95b75595e9cf1f0.setContent(html_4a6525ff5ae546fff1c487ec553f7845);
+            
+        
+
+        marker_c8ac159b1823010a63c4af6f045e0db9.bindPopup(popup_8b3df9a3646424a2d95b75595e9cf1f0)
+        ;
+
+        
+    
+    
+            var poly_line_a0ce57797ec993cdde9bbd540b0a5487 = L.polyline(
+                [[-10.436303488824876, 162.60139995407593], [36.64511733908191, 111.31373020586926]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+            var marker_68d74c5c9aaa6c7e35f2ac83ee21ab13 = L.marker(
+                [54.256138667054614, -159.40179933166218],
+                {}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+        var popup_1f54216e4c378a5f7befa2eaad494a0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17ebf807a655f73dbc7beae9bd1d05da = $(`<div id="html_17ebf807a655f73dbc7beae9bd1d05da" style="width: 100.0%; height: 100.0%;">Ubicación 9: (54.2561, -159.4018) - Desconocido</div>`)[0];
+                popup_1f54216e4c378a5f7befa2eaad494a0b.setContent(html_17ebf807a655f73dbc7beae9bd1d05da);
+            
+        
+
+        marker_68d74c5c9aaa6c7e35f2ac83ee21ab13.bindPopup(popup_1f54216e4c378a5f7befa2eaad494a0b)
+        ;
+
+        
+    
+    
+            var poly_line_33405204fc7a1f5de6bf581775262620 = L.polyline(
+                [[36.64511733908191, 111.31373020586926], [54.256138667054614, -159.40179933166218]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+            var marker_4cb8a39a581a0f18f5bd958e8751edfe = L.marker(
+                [-1.8377677249794289, 133.97280107924377],
+                {}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+        var popup_e9a1fceaa9c37a61a1988c5cfd9c80a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d339faea3978f4f314ea354ea09f3ff7 = $(`<div id="html_d339faea3978f4f314ea354ea09f3ff7" style="width: 100.0%; height: 100.0%;">Ubicación 10: (-1.8378, 133.9728) - Manokwari Selatan, Papua Barat, Nueva Guinea Occidental, Indonesia</div>`)[0];
+                popup_e9a1fceaa9c37a61a1988c5cfd9c80a0.setContent(html_d339faea3978f4f314ea354ea09f3ff7);
+            
+        
+
+        marker_4cb8a39a581a0f18f5bd958e8751edfe.bindPopup(popup_e9a1fceaa9c37a61a1988c5cfd9c80a0)
+        ;
+
+        
+    
+    
+            var poly_line_b21237feeff2b1abdb41f468be7c7a02 = L.polyline(
+                [[54.256138667054614, -159.40179933166218], [-1.8377677249794289, 133.97280107924377]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3629981de8c2dc131a9f6b06c86af53);
+        
+    
+            map_d3629981de8c2dc131a9f6b06c86af53.fitBounds(
+                [[-1.8377677249794289, 133.97280107924377], [36.05515744286991, 109.72175423421595], [32.28564333080678, 30.648329389400345], [30.958133578876527, -60.41880410862038], [49.106671670763205, 137.92452600277278], [-38.541197458023184, -151.66733045527067], [-10.436303488824876, 162.60139995407593], [36.64511733908191, 111.31373020586926], [54.256138667054614, -159.40179933166218], [-1.8377677249794289, 133.97280107924377]],
+                {}
+            );
+        
+</script>
+</html>
