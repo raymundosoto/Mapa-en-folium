@@ -32,3 +32,42 @@ Puedes instalar las dependencias utilizando `pip`:
 
 ```bash
 pip install Flask folium geopy
+
+## Uso
+
+1. **Clona este repositorio** en tu máquina local:
+   - Abre una terminal y ejecuta:
+     ```bash
+     git clone https://github.com/tu-usuario/Generador-de-Rutas.git
+     ```
+
+2. **Navega al directorio del proyecto**:
+   - Cambia al directorio del proyecto:
+     ```bash
+     cd Generador-de-Rutas
+     ```
+
+3. **Instala las dependencias** necesarias con `pip`:
+   - Ejecuta el siguiente comando para instalar las bibliotecas requeridas:
+     ```bash
+     pip install Flask folium geopy
+     ```
+
+4. **Ejecuta la aplicación Flask**:
+   - En la terminal, corre el siguiente comando:
+     ```bash
+     python app.py
+     ```
+
+5. **Abre tu navegador web**:
+   - Dirígete a la siguiente URL en tu navegador:
+     ```
+     http://127.0.0.1:5000/
+     ```
+
+6. **Genera una ruta aleatoria**:
+   - Haz clic en el botón **"Generar Ruta"** para crear una ruta aleatoria.
+   - El mapa generado aparecerá en la página, junto con una lista de las ubicaciones y la distancia total de la ruta cerrada.
+
+7. **Descarga el mapa generado**:
+   - Haz clic en el botón **"Descargar Mapa"** para guardar el mapa como un archivo HTML en tu dispositivo.
