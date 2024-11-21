@@ -20,11 +20,8 @@ cytoolz @ file:///C:/b/abs_d43s8lnb60/croot/cytoolz_1701723636699/work
 dask @ file:///C:/b/abs_59fkcimley/croot/dask-core_1683065223377/work
 debugpy @ file:///D:/bld/debugpy_1719378780755/work
 decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1641555617451/work
-dlib @ file:///D:/bld/dlib_1670031410874/work
 exceptiongroup==1.2.1
 executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1698579936712/work
-face-recognition==1.3.0
-face-recognition-models==0.3.0
 filelock==3.15.1
 Flask==3.0.3
 flatbuffers==24.3.7
@@ -53,8 +50,6 @@ Jinja2==3.1.3
 joblib @ file:///C:/b/abs_f4b98l6lgk/croot/joblib_1718217224240/work
 jsonschema==4.21.1
 jsonschema-specifications==2023.12.1
-jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1716472197302/work
-jupyter_core @ file:///D:/bld/jupyter_core_1710257325428/work
 kiwisolver==1.4.5
 lazy_loader @ file:///C:/b/abs_3fs2i5w5p3/croot/lazy_loader_1718176758844/work
 locket @ file:///C:/ci/locket_1652904093019/work
@@ -73,7 +68,6 @@ mpmath==1.3.0
 nest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1705850609492/work
 networkx @ file:///C:/b/abs_e6gi1go5op/croot/networkx_1690562046966/work
 numpy @ file:///C:/Users/dev-admin/mkl/numpy_and_numpy_base_1682982345978/work
-opencv-contrib-python==4.9.0.80
 opt-einsum==3.3.0
 packaging==23.2
 pandas==2.0.3
@@ -92,12 +86,9 @@ pycparser==2.21
 pydeck==0.8.1b0
 Pygments==2.17.2
 pyparsing==3.1.2
-pyserial==3.5
-pyTelegramBotAPI==4.20.0
 python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
 python-telegram-bot==21.3
 pytz==2024.1
-pyunsplash==1.0.0rc2
 PyWavelets @ file:///C:/b/abs_a8r4b1511a/croot/pywavelets_1670425185881/work
 pywin32==306
 PyYAML @ file:///C:/b/abs_782o3mbw7z/croot/pyyaml_1698096085010/work
@@ -106,23 +97,17 @@ referencing==0.34.0
 requests==2.31.0
 rich==13.7.1
 rpds-py==0.18.0
-scikit-image @ file:///C:/b/abs_2075zg1pia/croot/scikit-image_1682528361447/work
-scikit-learn @ file:///C:/b/abs_daon7wm2p4/croot/scikit-learn_1694788586973/work
 scipy==1.9.1
 six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
 smmap==5.0.1
 sniffio==1.3.1
-sounddevice==0.4.6
 stack-data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1669632077133/work
-streamlit==1.32.2
 sympy==1.12.1
 tbb==2021.12.0
-tenacity==8.2.3
 threadpoolctl @ file:///C:/b/abs_def0dwqlft/croot/threadpoolctl_1719407816649/work
 tifffile @ file:///C:/b/abs_45o5chuqwt/croot/tifffile_1695107511025/work
 toml==0.10.2
 toolz @ file:///C:/b/abs_cfvk6rc40d/croot/toolz_1667464080130/work
-torch==2.3.1
 tornado @ file:///D:/bld/tornado_1717722870081/work
 traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1713535121073/work
 typing_extensions==4.10.0
