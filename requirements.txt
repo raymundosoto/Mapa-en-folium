@@ -20,10 +20,6 @@ cytoolz @ file:///C:/b/abs_d43s8lnb60/croot/cytoolz_1701723636699/work
 dask @ file:///C:/b/abs_59fkcimley/croot/dask-core_1683065223377/work
 debugpy @ file:///D:/bld/debugpy_1719378780755/work
 decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1641555617451/work
-<<<<<<< HEAD
-=======
-
->>>>>>> 03ac6bd55b829f989944b465f107b1e18d7b289e
 exceptiongroup==1.2.1
 executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1698579936712/work
 filelock==3.15.1
@@ -98,18 +94,12 @@ referencing==0.34.0
 requests==2.31.0
 rich==13.7.1
 rpds-py==0.18.0
-<<<<<<< HEAD
 scipy==1.9.1
-=======
->>>>>>> 03ac6bd55b829f989944b465f107b1e18d7b289e
 six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
 smmap==5.0.1
 sniffio==1.3.1
 stack-data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1669632077133/work
-<<<<<<< HEAD
 sympy==1.12.1
-=======
->>>>>>> 03ac6bd55b829f989944b465f107b1e18d7b289e
 tbb==2021.12.0
 threadpoolctl @ file:///C:/b/abs_def0dwqlft/croot/threadpoolctl_1719407816649/work
 tifffile @ file:///C:/b/abs_45o5chuqwt/croot/tifffile_1695107511025/work
